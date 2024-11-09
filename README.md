@@ -12,3 +12,6 @@
 - Install TensorFlow
 
   `conda install -c main tensorflow==2.11 or conda install tensorflow==2.11`
+
+### random_model_1D.py
+generate random smooth models
