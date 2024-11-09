@@ -1,4 +1,4 @@
-# Physics-Guided Auto-Encoder for 1D MT inversion
+# 1D MT inversion using a Physics-Guided Auto-Encoder
 
 ### Install
 - Install Anaconda and create a new environment
