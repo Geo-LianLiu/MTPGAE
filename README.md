@@ -14,7 +14,7 @@
   `conda install -c main tensorflow==2.11 or conda install tensorflow==2.11`
 
 ### random_model_1D.py
-  To generate random smooth models.
+- To generate random smooth models.
 
 ### MT1D_fwd.py
-  MT 1D forward simulation using the analytic method.
+- MT 1D forward simulation using the analytic method.
