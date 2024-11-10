@@ -108,10 +108,10 @@ def mt1d_analytic(freq, dz, sig, errorfloor=0.):
         Z  = np.exp(-2.0 * km * dz[:, m]) * (Z - Z0) / (Z + Z0)
         Z  = Z0 * (1 + Z) / (1 - Z)
     zxy = Z
-    z_sd = np.random.normal(0., 1., [nf, 1]) * abs(zxy) * errorfloor
-    # z_sd_i = np.random.normal(0., 1., [nf, 1]) * abs(zxy) * 0.05
-    z_sd_i = z_sd
-    zxy = zxy + z_sd + II * z_sd_i
+    z_sd = abs(zxy) * errorfloor
+    z_sd_r = np.random.normal(0., 1., [nf, 1]) * z_sd
+    z_sd_i = np.random.normal(0., 1., [nf, 1]) * z_sd
+    zxy = zxy + z_sd_r + II * z_sd_i
     
     
     rho = abs(zxy * zxy) / (omega * mu)
